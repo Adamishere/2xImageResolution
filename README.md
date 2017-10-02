@@ -8,6 +8,7 @@ Working on my personal computer proved to be a limiting factor in my research in
 Given these limitations, while it does not perform at levels of that of neural networks designed to resize images, it does have some improvements on traditional resizing techniques. Considering that these decision trees are generated on a single image rather than thousands, any improvement is worth noting. 
 
 ![Alt text](/Output/out5.jpg)
+(View image in full size to see the differences)
 
 ## Next Steps: 
 Due to memory limitations on my computer, most of the next steps involve moving these research onto a platform than can provide more processing power and memory to handle variations on this approach that I could not perform on my personal computer. For example:
