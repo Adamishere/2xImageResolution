@@ -1,5 +1,5 @@
 
-# 2x ImageScaling
+# 2x Image Resolution
 This is a side project inspired by neural networks being developed to provide "Super Resolution" to images when resizing them. I was curious how other machine learning algorithms would work in a similar application. Could a “shallow” learning model be used surpass traditional scaling techniques? 
 
 ## Outcome:
