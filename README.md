@@ -25,7 +25,7 @@ This was the starting image (200 x 250) used to resize and train the model. This
 ![Alt text](/Output/out2.jpg)
 
 
-Below is the general process of re-scaling the image. Grey squares represent existing color values, blue represent imputed values using the row model, yellow represents imputed values using the column model. The process order was then reversed by putting spaces between columns, then rows. The values from the two iterations were then averaged into one image.
+Below is the general process of re-scaling the image. Grey squares represent existing color values, blue represents imputed values using the row model, yellow represents imputed values using the column model. The process order was then reversed by putting spaces between columns, then rows. The values from the two iterations were then averaged into one image.
 
 ![Alt text](/Output/out3.jpg)
 
