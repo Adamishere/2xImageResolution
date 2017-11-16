@@ -1,9 +1,9 @@
 
 # 2x Image Resolution
-This is a side project inspired by neural networks being developed to provide "Super Resolution" to images when resizing them. I was curious how other machine learning algorithms would work in a similar application. Could a “shallow” learning model be used surpass traditional scaling techniques? 
+This is a side project inspired by neural networks being developed to provide "Super Resolution" to resized images. I was curious how other machine learning algorithms would work in a similar application. Could a “shallow” learning model be used surpass traditional scaling techniques? 
 
 ## Outcome:
-Working on my personal computer proved to be a limiting factor in my research in this area. It was difficult to work with more than one or two images in the training of data. A small 40kb image resulted in a 800mb R data frame! I frequently found myself running out of memory to perform some of the tasks. This limited the number variations I could try, with more "data hungry" approaches resulting in objects too large for me to process. 
+Working on my personal computer proved to be a limiting factor in my research in this area. It was difficult to work with more than one or two images in the training of data since a small 40kb image resulted in a 800mb R data frame! As a result, I frequently found myself running out of memory to perform some of the tasks. This limited the number variations I could try, especially with more "data hungry" approaches, it resulted in objects too large for me to process. 
 
 However, given these limitations, while it does not perform at levels of that of neural networks designed to resize images, it does have some improvements on traditional resizing techniques. Considering that these decision trees were generated on a single image rather than thousands, small improvements were worth noting. 
 
@@ -12,7 +12,7 @@ However, given these limitations, while it does not perform at levels of that of
 
 
 ## Next Steps: 
-Due to memory limitations on my computer, most of the next steps involve moving these research onto a platform than can provide more processing power and memory to handle variations on this approach that I could not perform on my personal computer. For example:
+Due to memory limitations on my computer, most of the next steps involve moving this research onto a platform than can provide more processing power and memory to handle variations of this approach that I could not perform on my personal computer. For example:
 * Incorporate other high resolution images into the training data, not just the starting image. 
 * Test different machine learning algorithms or an ensemble method. 
 * Test different geometries when using surrounding pixels as predictors.
@@ -31,7 +31,7 @@ Below is the general process of re-scaling the image. Grey squares represent exi
 
 Because of this resizing approach, two models needed to be trained, one for spacing between column and one for spacing between rows. Using the starting image as a source for training data, the surrounding pixels would inform the prediction each pixel (indicated by "X" in the image below). 
 
-I used a decision tree model because its ability to handle complex interactions in the data that would be suited for image data rather than traditional linear regression. (In the final model used, a 5x5 square was used as opposed to a 3x3. A 7x7 model was also test but did not yield any noticeable improvements in image quality)
+I used a decision tree model because of its ability to handle complex interactions in the data that would be suited for image data rather than traditional linear regression, which would conceptual result in a static weighted average. (In the final model used, a 5x5 square was used as opposed to a 3x3. A 7x7 model was also test but did not yield any noticeable improvements in image quality)
 
 ![Alt text](/Output/out4.jpg)
 
